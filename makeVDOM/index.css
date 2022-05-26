@@ -1,0 +1,81 @@
+body{display:flex; flex-direction:row}
+#app, #root{width: 50%; box-sizing: border-box; padding: 10px;}
+
+#root #app{
+    width:100%;
+    padding:0;
+}
+
+#app {
+    background-color: #f6f6f6;
+}
+
+#app * {
+    box-sizing: border-box;
+}
+
+#app form {
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#app form input {
+    width: 80%;
+    height: 35px;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+}
+
+#app form .submit_btn {
+    height: 35px;
+    border: 0;
+    background: linear-gradient(to right, #6478FB, #8763FB);
+    font-size: 20px;
+    padding: 7px 20px;
+    border-radius: 0 4px 4px 0;
+    color: #ffffff;
+}
+
+#app form .submit_btn:hover {
+    cursor: pointer;
+}
+
+#app ul{
+    padding: 0px 10px;
+}
+
+#app li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 15px 10px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.03);
+}
+
+#app li + li {
+    margin-top: 10px;
+}
+
+#app li .remove_btn {
+    height: 35px;
+    border: 0;
+    background: tomato;
+    font-size: 24px;
+    padding: 0 20px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+#app li .remove_btn:hover {
+    cursor: pointer;
+}

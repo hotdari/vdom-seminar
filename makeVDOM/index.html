@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="app">
+    <form>
+        <input type="text" class="input_text" />
+        <button type="submit" class="submit_btn">+</button>
+    </form>
+    <ul>
+        <li>
+            <span>
+                <input type="checkbox" class="input_check" />
+                데일리 미팅 준비하기
+            </span>
+            <button class="remove_btn">-</button>
+        </li>
+        <li class="completed">
+            <span>
+                <input type="checkbox" class="input_check" checked />
+                데일리 미팅 이후 업무 내용 변경된 것 체크하기
+            </span>
+            <button class="remove_btn">-</button>
+        </li>
+    </ul>
+</div>
+<div id="root">
+    <button>VDOM Show</button>
+</div>
+<script src="./index.js"></script>
+</body>
+</html>
